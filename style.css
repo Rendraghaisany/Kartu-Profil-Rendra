@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #282a36; /* Dark background color similar to the example */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #f8f8f2; /* Light text color */
+}
+
+.profile-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #f0f0f0; /* Light background for the card */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for the card */
+    text-align: center;
+    overflow: hidden; /* Important for border-radius on the header */
+    position: relative;
+    padding-bottom: 20px; /* Space for the description */
+    color: #444; /* Darker text for the card content */
+}
+
+.card-header {
+    background-color: #00ffff; /* Blue color for the header section */
+    height: 90px; /* Height of the header background */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Ensure it's behind the image */
+}
+
+.profile-image-wrapper {
+    position: relative;
+    z-index: 2; /* Ensure the image is above the header background */
+    margin-top: 40px; /* Adjust to position the image correctly over the header */
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f0f0f0; /* Border around the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+}
+
+.profile-title {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.profile-description {
+    font-size: 0.85em;
+    line-height: 1.5;
+    padding: 0 25px;
+    color: #555;
+}
